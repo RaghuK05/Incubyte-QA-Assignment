@@ -1,0 +1,97 @@
+﻿S. no,BDD Test Case
+1,"Feature: Compose button visibility and clickable
+Scenario: User able to see the compose button and allowed to click
+Given the user is on the gmail homepage
+When the page is fully loaded
+Then compose button shoul be visible
+And User is able to click
+"
+2,"Feature: Open the compose email window
+Scenario: User opens the compose email window
+Given logged into Gmail
+When Clicked on compose button
+Then System should open the New message pop up window
+And to Field should be empty
+And Subject field shoud be empty
+And the body of the email should be empty
+"
+3,"Feature: Send a test email
+Scenario: System allow user to send test email
+Given user is on new message popup window
+When user enters Valid email address in to field
+And user enter Incubyte in the subject section
+and user enters QA test for Incubyte  in the email body
+And user click on the Send button
+Then user should see a popup message sent.
+And User should see that email under sent section."
+4,"Feature: Send a test email by adding the attachment
+Scenario: System allow user to send email with attachment
+Given user is on new message popup window
+When user enters Valid email address in to field
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And user add attachment by adding clicking on Attach symbol.
+And user can see the attached file name with size of the attachment.
+And user click on the Send button
+Then user should see a popup message sent.
+And User should see that email under sent section."
+,
+5,"Feature: User can able to send email to multiusers
+Scenario: System allow user to send email to multiple users.
+Given user is on new message popup window
+When user enters Valid email address in to field
+And user add another valid email address in CC field.
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And user click on the Send button
+Then user should see a popup message sent.
+And User should see that email under sent section."
+6,"Feature: System auto save the drafts
+Scenario: System is stored the non sending emails as drafts.
+Given user is on new message popup window
+When user enters Valid email address in to field
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And user click on the Save & Close button
+Then the email should be saved in the Drafs.
+And User should able to see that email under Drafts section."
+7,"Feature : User cancel the composition
+Scenario: User cancel the Email composition
+Given user is on new message popup window
+When user enters Valid email address in to field
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And user click on the Discard button
+Then the new message pop up window should close.
+And the email should not save under Drafts or Sent section .
+"
+8,"Feature: Send a test email by adding the Image
+Scenario: System allow user to add image in email body
+Given user is on new message popup window
+When user enters Valid email address in to field
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And user copied image from the local machine.
+And user pasted that image into email body.
+And user click on the Send button
+Then user should see a popup message sent.
+And User should able see that email under sent section withthe image n email body."
+9,"Scenario: User tries to send an email without entering a recipient email address
+Given user is on new message popup window
+When user leave the To field empty
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And userclick on the Send button
+Thenuser should see an error message saying ""Please specify at least one recipient.""
+And the email should not be sent"
+,
+10,"Feature: Sending an email with invalid email address
+Scenario: User attempts to send an email with Invalid email address
+Given user is on new message popup window
+When user enter Invalid email in To field.
+And user enter Incubyte in the subject section
+And user enters QA test for Incubyte in the email body
+And user click on the Send button
+Then user should see an error message saying ""The address ""t@c"" in the ""To"" field was not recognized. Please make sure that all addresses are properly formed.""
+And the email should not be sent
+"

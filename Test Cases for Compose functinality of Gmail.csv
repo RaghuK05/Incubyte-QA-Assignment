@@ -1,0 +1,36 @@
+﻿Possitive Test cases for Compose functionality of Gmail,
+TC Id,Test Case
+1,Verify that 'New message ' popup is displaying on clicking on the Compose button
+2,"Verify that system allowes to enter valid email is in the fields of  'To', 'cc', 'bcc' section."
+3,"Verify that auto suggestions are working properly based on the existing contacts while typing email ids in 'To', 'cc', 'bcc' section."
+4,"Verify that user can enter multiple comma seperated email ids in 'To', 'cc', 'bcc' section."
+5,Verify that the user can type Incubyte in the 'Subject' text box.
+6,Verify that the user can enter QA test for Incubyte in the email body section.
+7,"Verify that the editor options such as font style, font size, underaline, alignment, text color etc. are working and allwos to do the changes in email body section. "
+8,Verify that user can add images in email body section
+9,Verify that user can add the files by clicking on Attachment symbol.
+10,Verify that user can add the links by clicking on insert link and also check the short cut to add the same.
+11,Verify that Insert file using drive option is visble and working properly
+12,Verify that user can add signature by clicking on Insert signature option.
+13,"Verify that the email is delivered to all the intended users in in 'To', 'cc', 'bcc' section after clicking on Send button."
+14,Verify that sent emails are available in the Sent section.
+15,Verify that the emails composed and not sent  are stored in the Draft section.
+16,"Verify that the maximum no of email ids can be enterd in 'To', 'cc', 'bcc' section."
+17,Verify that the maximum no of characters allowed in the Subject text box.
+18,Verifyt that the maximum number of atttachments and size of the attachement allowed.
+19,Verify that the mail can be send to non Gmail email ids also
+20,Verify Undo & Redo optiosn are working properly.
+21,Verify systen should not save the email in draft when we clicked on Discard button.
+,
+,
+Negative Test cases for Compose functionality of Gmail,
+TC Id,Test Case
+1,"Verify by sending an email without adding the recipients (To , CC, Bcc)"
+2,Verify that system should not allow Invalid email address format
+3,"Verify by entering special characters in recipients (To , CC, Bcc)"
+4,Verify by sending an email without subject
+5,Verify by sending an email without email body
+6,Verify by sending email with incorrect from address
+7,Verify that system should not allow to attach the file which is grater than maximum size.
+8,Verify by adding unsupported attachments.
+9,Verify by sending email with multiple attachments with same name
